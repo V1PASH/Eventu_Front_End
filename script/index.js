@@ -1,14 +1,18 @@
 // search pop up
 
 search_menu = Document.getElementById("search_menu");
-var menu = false;
+var menu = true;
 
 function search() {
-    if (menu == false) {
+    if (menu == true) {
         search_menu.style.display = "block";
-        menu = true;
+        search_menu.style.visibility = "visible";
+        menu = false;
+
     } else {
         search_menu.style.display = "none";
-        menu = false;
+
+        search_menu.style.visibility = "hidden";
+        menu = true;
     }
 }

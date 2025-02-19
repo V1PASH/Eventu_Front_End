@@ -19,10 +19,23 @@
 @keyframes slide-in {
     from {
         max-height: 0px;
+        visibility: hidden;
         opacity: 0;
     }
     to {
         max-height: 100vh;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-from-side {
+    from {
+        max-width: 0;
+        opacity: 0;
+    }
+    to {
+        max-width: 60%;
         opacity: 1;
     }
 }
@@ -40,7 +53,8 @@
     height: 100vh;
     align-content: center;
     text-align: center;
-    /* display: none; */
+    display: none;
+    visibility: hidden;
     animation: slide-in 0.5s ease-in-out;
 }
 
@@ -90,7 +104,7 @@ li>a {
     color: #ffffff;
     border: none;
     border-radius: 170px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -141,7 +155,7 @@ li>a {
 
 .language_dropdown {
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
     background-color: #ffffff;
     visibility: hidden;
     opacity: 0;
@@ -257,6 +271,29 @@ li>a {
 
 .more-button:hover {
     background-color: #8c52ff;
+}
+
+.search_form {
+    background-color: #ffffff!important;
+    width: 60%;
+    display: flex;
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 50px;
+    margin: 1% auto;
+    animation: slide-from-side 1s ease-in-out;
+}
+
+.search_form input:focus,
+.search_form input:focus-visible {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none;
+}
+
+.search_form input {
+    width: 100%!important;
+    border: none;
 }
 
 
