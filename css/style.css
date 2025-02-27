@@ -180,6 +180,16 @@
  }
  /* common */
  
+ a {
+     color: black;
+     text-decoration: none;
+     transition: color 0.3s ease-in-out;
+ }
+ 
+ a:hover {
+     color: #fc226a;
+ }
+ 
  .custom-head {
      font-size: 62px;
  }
@@ -534,7 +544,7 @@
      margin-left: -30px;
  }
  
- .back-text {
+ .about-us-section .back-text {
      position: absolute;
      z-index: -1;
      right: 10%;
@@ -610,6 +620,17 @@
  }
  /* feature section */
  
+ .num {
+     font-size: 100px;
+     font-weight: 900;
+     color: #fc226b1a;
+ }
+ 
+ .feature-body {
+     position: absolute;
+     top: 10%;
+ }
+ 
  .features-section {
      margin: 0 auto;
      margin-top: -120px;
@@ -622,6 +643,9 @@
      border-radius: 10px;
      text-align: center;
      padding: 20px;
+     height: 350px;
+     text-align: center;
+     align-content: center;
  }
  
  .feature-box:hover {
@@ -642,3 +666,171 @@
      animation: spin 1s ease-in-out;
  }
  /* schedule */
+ 
+ .schedule-sec {
+     margin-top: 20px;
+     position: relative;
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ .back-text {
+     position: absolute;
+     right: 10%;
+     font-size: 100px;
+     font-weight: 700;
+     z-index: -1;
+     color: #c6c6c650;
+ }
+ 
+ .schedule-dates-container {
+     box-shadow: 0px 0px 10px 2px rgba(209, 209, 209, 0.3);
+     background-color: rgb(255, 255, 255);
+     padding: 10px;
+     border-radius: 20px;
+ }
+ 
+ .schedule-btn {
+     display: flex;
+     padding: 5px 10px;
+     background-color: transparent;
+     border: none;
+     border-radius: 10px;
+     width: 100%;
+ }
+ 
+ .active-schedule {
+     background: linear-gradient(to left, #8c52ff, #fc226a)!important;
+     color: white;
+ }
+ 
+ .active-schedule .icon {
+     color: #ffffff!important;
+ }
+ 
+ .schedule-btn .icon {
+     color: #fc226a;
+     font-size: 40px;
+     padding: 0px 5px;
+ }
+ 
+ .schedule-head {
+     border-bottom: 1px solid rgb(220, 220, 220);
+     padding-bottom: 10px;
+ }
+ 
+ .schedule-body {
+     padding: 40px 0;
+ }
+ 
+ .schedule-item {
+     margin: 20px 0;
+ }
+ 
+ .schedules {
+     display: flex;
+     position: relative;
+ }
+ 
+ .schedules::before {
+     content: "";
+     border-left: 3px dashed #8c52ff;
+     margin: 150px 53px;
+ }
+ 
+ .count {
+     position: absolute;
+     margin-left: -100px;
+     margin-top: 10%;
+     background: linear-gradient(to right, #8c52ff, #fc226a);
+     text-align: center;
+     align-content: center;
+     height: 90px;
+     width: 90px;
+     border-radius: 100%;
+     font-weight: 800;
+     color: white;
+     font-size: 32px;
+ }
+ 
+ .schedule-item-container {
+     padding: 10px;
+     border-radius: 20px;
+     width: 100%;
+     box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.221);
+ }
+ 
+ .schedule-item-container .img-container {
+     width: 100%;
+     overflow: hidden;
+     border-radius: 10px;
+ }
+ 
+ .schedule-item-container .img-container img {
+     width: 100%;
+     transition: transform .3s ease-in-out;
+ }
+ 
+ .schedule-item-container:hover .img-container img {
+     transform: scale(1.1);
+     transition: transform .3s ease-in-out;
+ }
+ 
+ .schedule-item-container .schedule-body {
+     padding: 0 0;
+ }
+ 
+ .schedule-bottom {
+     border-top: 1px solid rgb(220, 220, 220);
+     margin: 20px 0;
+     padding: 20px 0;
+ }
+ 
+ .speaker {
+     display: flex;
+ }
+ 
+ .speaker-person {
+     margin-left: 20px;
+ }
+ 
+ .speaker .speaker-img {
+     border-radius: 100%;
+     height: 60px;
+     width: 60px;
+     overflow: hidden;
+     margin-right: 10px;
+ }
+ 
+ .speaker .speaker-img img {
+     width: 100%;
+ }
+ /* fun facts */
+ 
+ .fun-facts-section {
+     background-image: url(/img/02.png);
+     background-size: cover;
+     padding: 5% 10%;
+ }
+ 
+ .fact-box {
+     margin-top: 20px;
+     background-color: #ffffff;
+     border-radius: 10px;
+     padding: 20px 15px;
+ }
+ 
+ .fact-box .icon {
+     position: relative;
+     overflow: hidden;
+     width: 30%;
+     background: linear-gradient(#8c52ff, #fc226a);
+     color: white;
+     border-radius: 100%;
+     padding: 15px;
+ }
+ 
+ .fact-box .icon img {
+     width: 100%;
+     filter: brightness(0)invert(1);
+ }
