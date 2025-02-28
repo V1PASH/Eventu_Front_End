@@ -8,7 +8,7 @@
  }
  
  body {
-     background-color: rgb(250, 250, 250);
+     background-color: rgb(245, 245, 245);
  }
  
  .main {
@@ -233,13 +233,25 @@
      color: #ffffff;
  }
  
+ .btn-third {
+     background-color: #fc226a;
+     color: white;
+     padding: 10px 20px;
+     font-size: 18px;
+     border-radius: 100px;
+ }
+ 
+ .btn-third:hover {
+     background-color: #ffffff;
+     color: #fc226a;
+ }
+ 
  .btn-ter {
      background-color: #fc226a;
      color: #ffffff;
      border: none;
      border-radius: 170px;
      padding: 5px 10px;
-     font-size: 20px;
      font-weight: 600;
  }
  
@@ -561,7 +573,7 @@
  }
  
  .about_us_heading {
-     font-size: 8vh;
+     font-size: 60px;
      font-weight: 700;
  }
  
@@ -786,15 +798,15 @@
      padding: 20px 0;
  }
  
- .speaker {
+ .schedule-section .speaker {
      display: flex;
  }
  
- .speaker-person {
+ .schedule-section .speaker-person {
      margin-left: 20px;
  }
  
- .speaker .speaker-img {
+ .schedule-section .speaker .speaker-img {
      border-radius: 100%;
      height: 60px;
      width: 60px;
@@ -802,7 +814,7 @@
      margin-right: 10px;
  }
  
- .speaker .speaker-img img {
+ .schedule-section .speaker .speaker-img img {
      width: 100%;
  }
  /* fun facts */
@@ -820,10 +832,15 @@
      padding: 20px 15px;
  }
  
- .fact-box .icon {
-     position: relative;
-     overflow: hidden;
+ .fact-box .icon-b {
+     padding: 5px;
+     border: 2px dashed #fc226a;
+     border-radius: 50%;
      width: 30%;
+ }
+ 
+ .fact-box .icon {
+     overflow: hidden;
      background: linear-gradient(#8c52ff, #fc226a);
      color: white;
      border-radius: 100%;
@@ -832,5 +849,230 @@
  
  .fact-box .icon img {
      width: 100%;
+     filter: brightness(0)invert(1);
+ }
+ /* pricing plans */
+ 
+ .plan-container {
+     position: relative;
+     margin: 20px 0px;
+     border-radius: 10px;
+     overflow: hidden;
+     background-color: #ffffff;
+     transition: margin-top .5s ease-in-out;
+     padding-bottom: 20px;
+ }
+ 
+ .plan-container:hover {
+     margin-top: -5px;
+ }
+ 
+ .plan-container .top-sec {
+     border-bottom: 2px dashed #fc226a;
+ }
+ 
+ .plan-container .top-sec {
+     position: relative;
+ }
+ 
+ .plan-container .top-sec .head {
+     position: absolute;
+     top: 5%;
+     width: 100%;
+     text-align: center;
+     color: white;
+     font-size: 30px;
+     font-weight: 700;
+ }
+ 
+ .plan-container .bottom-sec {
+     margin-top: 20px;
+ }
+ 
+ .plan-container .bottom-sec .plan_features {
+     list-style: none;
+ }
+ 
+ .plan-container .bottom-sec .plan_features li {
+     margin-top: 20px;
+ }
+ 
+ .plan-container .bottom-sec .plan_features li::before {
+     content: "\f00c";
+     font-family: fontawesome;
+     color: white;
+     background-color: #fc226a;
+     border-radius: 50%;
+     font-size: 10px;
+     padding: 4px 5px;
+     margin-right: 10px;
+ }
+ 
+ .sides-hole-left {
+     position: absolute;
+     background-color: rgb(245, 245, 245);
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-left: -15px;
+     margin-top: -15px;
+ }
+ 
+ .sides-hole-right {
+     position: absolute;
+     background-color: rgb(245, 245, 245);
+     width: 30px;
+     height: 30px;
+     right: 0;
+     border-radius: 50%;
+     margin-right: -15px;
+     margin-top: -15px;
+ }
+ /* speakers section */
+ 
+ .speakers-section {
+     background-color: #ffffff;
+ }
+ 
+ .speakers-sec {
+     margin: 0 auto;
+     width: 90%;
+     position: relative;
+     z-index: 0;
+ }
+ 
+ .speaker-block {
+     transition: margin-top 0.5s ease-in-out;
+ }
+ 
+ .speaker-block:hover {
+     margin-top: -10px;
+ }
+ 
+ .speaker-block .img {
+     margin: 0 auto;
+     width: 80%;
+     overflow: hidden;
+     padding: 6px;
+     border-radius: 50%;
+     border: 3px solid #fc226a;
+ }
+ 
+ .speaker-block .img img {
+     width: 100%;
+     border-radius: 50%;
+ }
+ 
+ .speaker-block .info {
+     position: relative;
+     z-index: 1;
+     margin-top: -20px;
+ }
+ 
+ .speaker-socials {
+     background-color: #fc226a;
+     display: flex;
+     width: 65%;
+     padding: 0px 10px;
+     margin: 0 auto;
+     border-radius: 20px;
+     justify-content: space-around;
+ }
+ 
+ .speaker-socials a {
+     color: white;
+     font-size: 18px;
+ }
+ 
+ .speaker-socials a:hover {
+     color: #8c52ff;
+ }
+ 
+ .speaker-block .info a:hover {
+     color: black;
+ }
+ /* event registration */
+ 
+ .event-register-section {
+     background: linear-gradient(to left, #8b85ffd7, #fc226ad7), url(/img/register_event/01.jpg);
+     background-size: fit;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ 
+ .event-register {
+     padding: 50px;
+     text-align: center;
+     color: white;
+ }
+ /* why us */
+ 
+ .why-join-us-section {
+     background-color: white;
+ }
+ 
+ .why_us {
+     padding: 100px;
+ }
+ 
+ .why_us_image_wrapper {
+     position: relative;
+     height: 600px;
+ }
+ 
+ .why_us .why_us_image_wrapper .back {
+     position: absolute;
+     left: 10%;
+     top: 50px;
+     background-color: #fc226a;
+     height: 530px;
+     width: 50%;
+     transform: rotateZ(-7deg);
+     z-index: 0;
+     border-radius: 20px;
+ }
+ 
+ .why_us_image_wrapper .front {
+     position: absolute;
+     left: 15%;
+     overflow: hidden;
+ }
+ 
+ .why_us_image_wrapper .front img {
+     border-radius: 20px;
+ }
+ 
+ .why_us_image_wrapper .learn-more-btn {
+     position: absolute;
+     z-index: 100;
+     left: 5%;
+     bottom: 50px;
+ }
+ 
+ .why_us_text_wrapper {
+     padding: 10px 0;
+ }
+ 
+ .why_us_text_wrapper .reasons {
+     margin: 10px 0;
+ }
+ 
+ .why_us_text_wrapper .text {
+     border-bottom: 1px solid rgb(220, 220, 220);
+ }
+ 
+ .why_us_text_wrapper .icon {
+     background-color: #fc226a;
+     padding: 10px;
+     width: 70px;
+     height: 70px;
+     text-align: center;
+     align-content: center;
+     border-radius: 50%;
+     margin: 0 auto;
+ }
+ 
+ .why_us_text_wrapper .icon img {
+     width: 70%;
      filter: brightness(0)invert(1);
  }
