@@ -14,6 +14,10 @@
  .main {
      position: relative;
  }
+ 
+ section {
+     margin-top: 30px;
+ }
  /* animation */
  
  @keyframes pop-in {
@@ -1207,4 +1211,97 @@
      opacity: 1;
      visibility: visible;
      transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
+ }
+ /* sponsor section */
+ 
+ .sponsors-section {
+     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/sponser/bg.png);
+     background-size: cover;
+ }
+ 
+ .sponsors-sec {
+     padding: 20px 10%;
+ }
+ /* venue section */
+ 
+ .venue-section .venue-box {
+     position: relative;
+ }
+ 
+ .venue-section .venue-box .img-box {
+     width: 95%;
+     overflow: hidden;
+     border-radius: 30px;
+ }
+ 
+ .venue-section .venue-box .img-box img {
+     width: 100%;
+ }
+ 
+ .venue-section .venue-box .detail-box {
+     position: absolute;
+     bottom: 15px;
+     background-color: white;
+     border-radius: 20px;
+     padding: 20px;
+     width: 65%;
+     right: 0;
+     margin-right: -10px;
+ }
+ 
+ .venue-section .venue-box .detail-box i {
+     background: linear-gradient(#8c52ff, #fc226a);
+     color: white;
+     padding: 10px;
+     border-radius: 50%;
+     margin-left: 30px;
+ }
+ /* form */
+ 
+ .register-now-section {
+     margin-top: 130px;
+     background-image: url(/img/form/01.jpg);
+     background-size: cover;
+     background-position: center;
+     padding: 50px 10%;
+ }
+ 
+ .register-now-section .register-form {
+     padding: 50px;
+     background-color: white;
+     border-radius: 30px;
+     margin-top: -100px;
+ }
+ 
+ .register-now-section .register-form .input-group {
+     margin-top: 20px;
+ }
+ 
+ .register-now-section .register-form input,
+ .register-now-section .register-form select,
+ .register-now-section .register-form textarea {
+     resize: none;
+     background-color: #f8f8f8;
+     border-radius: 0px 20px 20px 0px;
+     border: none;
+ }
+ 
+ .register-now-section .register-form input:focus,
+ .register-now-section .register-form select:focus,
+ .register-now-section .register-form textarea:focus {
+     outline: none;
+     box-shadow: none;
+ }
+ 
+ .register-now-section .register-form .input-group-text {
+     background-color: #f8f8f8;
+     border: none;
+     color: #fc226a;
+     border-radius: 20px 0px 0px 20px;
+     padding: 10px;
+     font-size: 20px;
+ }
+ 
+ .register-now-section .register-form .textarea .input-group-text {
+     align-items: baseline;
  }
