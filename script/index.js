@@ -43,3 +43,45 @@ function Side_pop_menu_fn() {
         side_pop_menu = true;
     }
 }
+
+// testimonial slider
+
+
+let review_1 = document.getElementById("review-1");
+let review_2 = document.getElementById("review-2");
+let review_3 = document.getElementById("review-3");
+let review_4 = document.getElementById("review-4");
+let max = 3;
+
+
+let reviews = [review_1, review_2, review_3, review_4]
+
+let start = 0;
+let i;
+
+function review_slider() {
+    let i = start;
+    for (let k = 0; k < 3; k++) {
+
+        if (i > 3) {
+            i = 0
+        }
+        console.log(i);
+        reviews[i].style.display = 'block';
+        i++;
+    }
+    if (i > 3) {
+        i = 0
+    }
+    console.log("sispay none " + i);
+    reviews[i].style.display = 'none';
+    start++;
+
+}
+
+review_slider(); // start=0    i=0 1 2 3   3= dispay none start=1
+
+review_slider(); // start=1 i=1 2 3 4    4-dispay none start=2
+
+review_slider(); // start=2 i=2 3 4
+review_slider();
