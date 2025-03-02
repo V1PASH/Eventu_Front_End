@@ -1305,3 +1305,55 @@
  .register-now-section .register-form .textarea .input-group-text {
      align-items: baseline;
  }
+ /* blog section */
+ 
+ .blog-container {
+     width: 85%;
+     margin: 0 auto;
+ }
+ 
+ .blog-container .blog-box {
+     border: 1px solid #d7c3ff;
+     border-radius: 15px;
+     padding: 20px;
+     transition: border .3s ease-in-out;
+ }
+ 
+ .blog-container .blog-box:hover {
+     border: 1px solid #8c52ff;
+ }
+ 
+ .blog-container .blog-box .blog-img {
+     overflow: hidden;
+     border-radius: 10px;
+ }
+ 
+ .blog-container .blog-box .blog-img img {
+     width: 100%;
+     transition: transform .5s ease-in-out;
+ }
+ 
+ .blog-container .blog-box:hover .blog-img img {
+     transform: scale(1.1);
+ }
+ 
+ .blog-container .blog-box .blog-top .blog-info {
+     font-size: 18px;
+ }
+ 
+ .blog-container .blog-box .blog-top .blog-info a {
+     margin-right: 20px;
+ }
+ 
+ .blog-container .blog-box .blog-top .blog-info a i {
+     color: #fc226a;
+ }
+ 
+ .blog-container .blog-box .blog-top {
+     padding: 10px 0;
+     border-bottom: 1px solid rgb(193, 193, 193);
+ }
+ 
+ .blog-container .blog-box .blog-bottom .read-more {
+     margin-top: 20px;
+ }
