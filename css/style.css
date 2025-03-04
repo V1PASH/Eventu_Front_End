@@ -15,8 +15,8 @@
      position: relative;
  }
  
- section {
-     margin-top: 30px;
+ .row>div {
+     margin-top: 20px;
  }
  /* animation */
  
@@ -278,7 +278,6 @@
  }
  
  .head_top {
-     height: 80px;
      color: #ffffff;
      align-content: center;
  }
@@ -495,7 +494,7 @@
  
  .counter {
      background: linear-gradient(to left, #8c52ff, #fc226a);
-     width: 30%;
+     width: 500px;
      position: absolute;
      right: 0;
      bottom: 0;
@@ -568,10 +567,6 @@
      font-weight: 700;
  }
  
- .about-us {
-     height: 730px;
- }
- 
  .about_us_heading {
      font-size: 60px;
      font-weight: 700;
@@ -587,7 +582,7 @@
  }
  /* video section */
  
- .latest-Video {
+ .Video-Section {
      background-image: linear-gradient( rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(/img/video/01.jpg);
      background-size: cover;
      background-repeat: no-repeat;
@@ -808,8 +803,8 @@
  
  .schedule-section .speaker .speaker-img {
      border-radius: 100%;
-     height: 60px;
-     width: 60px;
+     height: fit-content;
+     width: 30%;
      overflow: hidden;
      margin-right: 10px;
  }
@@ -837,6 +832,7 @@
      border: 2px dashed #fc226a;
      border-radius: 50%;
      width: 30%;
+     height: fit-content;
  }
  
  .fact-box .icon {
@@ -844,12 +840,16 @@
      background: linear-gradient(#8c52ff, #fc226a);
      color: white;
      border-radius: 100%;
-     padding: 15px;
+     padding: 20%;
  }
  
  .fact-box .icon img {
      width: 100%;
      filter: brightness(0)invert(1);
+ }
+ 
+ .fact-box .content {
+     align-content: center;
  }
  /* pricing plans */
  
@@ -1012,17 +1012,18 @@
  }
  
  .why_us {
-     padding: 100px;
+     padding: 100px 0px;
  }
  
  .why_us_image_wrapper {
      position: relative;
+     text-align: center;
      height: 600px;
  }
  
  .why_us .why_us_image_wrapper .back {
      position: absolute;
-     left: 10%;
+     left: 13%;
      top: 50px;
      background-color: #fc226a;
      height: 530px;
@@ -1139,12 +1140,13 @@
  }
  
  .testimonial-box .reviewer-info .img {
-     width: 20%;
+     width: fit-content;
      padding: 5px;
      overflow: hidden;
      border-radius: 50%;
      border: 2px dashed #fc226a;
      margin-left: 40px;
+     height: fit-content;
  }
  
  .testimonial-box .reviewer-info .img img {
@@ -1198,8 +1200,9 @@
  
  .image-gallery-container .img-box .gallery-img-link {
      position: absolute;
-     left: 43%;
-     top: 40%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
      visibility: none;
      opacity: 0;
      font-size: 52px;
@@ -1356,4 +1359,188 @@
  
  .blog-container .blog-box .blog-bottom .read-more {
      margin-top: 20px;
+ }
+ /* follow us section */
+ 
+ .follow-us-sec {
+     position: relative;
+     margin: 50px 0;
+     padding: 0px 8%;
+ }
+ 
+ .follow-us-section .img-box {
+     overflow: hidden;
+     border-radius: 30px;
+ }
+ 
+ .follow-us-section .img-box img {
+     width: 100%;
+     transition: transform .3s ease-in-out;
+ }
+ 
+ .follow-us-section .img-box:hover img {
+     transform: scale(1.1) rotateZ(5deg);
+ }
+ 
+ .follow-us-section .follow-us {
+     position: absolute;
+     text-align: center;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     align-content: center;
+ }
+ /* footer */
+ 
+ .footer-section {
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/footer/01.png);
+     background-size: cover;
+     padding: 30px;
+ }
+ 
+ .footer-section .footer-sec {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ .footer-sec img {
+     width: 50%;
+ }
+ 
+ .footer-section form {
+     background-color: white;
+     padding: 5px;
+     border-radius: 50px;
+     overflow: hidden;
+ }
+ 
+ .footer-section form input {
+     border: none;
+ }
+ 
+ .footer-section form input:focus {
+     box-shadow: none;
+ }
+ 
+ .footer-section .form-control {
+     width: 73%;
+ }
+ 
+ .footer-section li {
+     transition: margin-left .3s ease-in-out;
+     margin-top: 10px;
+ }
+ 
+ .quick-links-list li::before {
+     content: "\f0da";
+     font-family: fontawesome;
+     color: #fc226a;
+     margin-right: 10px;
+ }
+ 
+ .footer-section li:hover {
+     margin-left: 10px;
+ }
+ 
+ .footer-section li:hover a {
+     color: #fc226a;
+ }
+ 
+ .footer-section li a {
+     color: white;
+ }
+ 
+ .footer-section .our-social-list li a i {
+     color: #fc226a!important;
+     margin-right: 10px;
+ }
+ 
+ .footer-sec .get-in-touch a {
+     color: white!important;
+ }
+ 
+ .footer-sec .get-in-touch li {
+     margin: 10px 0;
+ }
+ 
+ .footer-sec .get-in-touch i {
+     background-color: #fc226a;
+     height: 40px;
+     width: 40px;
+     text-align: center;
+     font-size: 22px;
+     align-content: center;
+     border-radius: 20px;
+ }
+ 
+ @media screen and (max-width:1205px) and (min-width:300px) {
+     .why_us .col-lg-6 {
+         width: 70%;
+         margin: 0 auto;
+     }
+     .Video-Section {
+         height: 700px;
+     }
+     .custom-head {
+         font-size: 52px;
+     }
+     .footer-section .form-control {
+         width: 81%;
+     }
+     .footer-section .col-lg-10 {
+         width: 75%;
+     }
+     .nav-seacrh {
+         display: none;
+     }
+     header .more {
+         display: none;
+     }
+     .info-text {
+         font-size: 50px;
+     }
+     .banner-date {
+         font-size: 70px;
+     }
+     .counter {
+         width: 250px;
+     }
+     .counter .row {
+         flex-direction: row;
+     }
+     .navbar>.container,
+     .navbar>.container-fluid,
+     .navbar>.container-lg,
+     .navbar>.container-md,
+     .navbar>.container-sm,
+     .navbar>.container-xl,
+     .navbar>.container-xxl {
+         background-color: white;
+     }
+     .feature-box {
+         height: 400px;
+     }
+     .carousel-item {
+         height: 800px;
+     }
+ }
+ 
+ @media screen and (max-width:750px) and (min-width:300px) {
+     .why_us_image_wrapper .front img {
+         width: 100%;
+     }
+     .why_us .why_us_image_wrapper .back {
+         height: 30%;
+     }
+     .why_us_image_wrapper .learn-more-btn {
+         bottom: 30%;
+     }
+     .why_us_image_wrapper {
+         height: 500px;
+     }
+     .schedule-section .speaker {
+         flex-direction: column;
+     }
  }

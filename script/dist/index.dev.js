@@ -22,7 +22,7 @@ function search() {
 //side pop up
 
 
-side_menu = document.getElementById("side-pop-up");
+var side_menu = document.getElementById("side-pop-up");
 var side_pop_menu = true;
 
 function Side_pop_menu_fn() {
@@ -31,6 +31,7 @@ function Side_pop_menu_fn() {
     side_menu.style.visibility = "visible";
     side_menu.style.opacity = "1";
     side_pop_menu = false;
+    console.log("side_pop_menu");
   } else {
     side_menu.style.display = "none";
     side_menu.style.visibility = "hidden";
@@ -66,15 +67,7 @@ function review_slider() {
     i = 0;
   }
 
-  console.log("sispay none " + i);
+  console.log("dispay none " + i);
   reviews[i].style.display = 'none';
   start++;
 }
-
-review_slider(); // start=0    i=0 1 2 3   3= dispay none start=1
-
-review_slider(); // start=1 i=1 2 3 4    4-dispay none start=2
-
-review_slider(); // start=2 i=2 3 4
-
-review_slider();
